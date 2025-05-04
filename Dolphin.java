@@ -5,15 +5,15 @@ public class Dolphin extends Animal implements Swim{
         setNameOfAnimal("Dolphin");
     }
 
-    private String colorOfDolphin;
+    private String color;
     private double swimmingSpeed;
 
-    public String getColorOfDolphin() {
-        return colorOfDolphin;
+    public String getColor() {
+        return color;
     }
 
-    public void setColorOfDolphin(String colorOfDolphin) {
-        this.colorOfDolphin = colorOfDolphin;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public double getSwimmingSpeed() {

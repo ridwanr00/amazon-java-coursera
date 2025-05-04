@@ -102,7 +102,7 @@ public class Main {
                                 System.out.println("Enter speed: ");
                                 tigerObject.setSpeed(keyboard.nextDouble());
                                 System.out.println("Enter sound level of roar: ");
-                                tigerObject.setSoundLevelOfRoar(keyboard.nextInt());
+                                tigerObject.setSoundLevel(keyboard.nextInt());
                                 break;
 
                             case 2:
@@ -111,7 +111,7 @@ public class Main {
                                 System.out.println("Age: " + tigerObject.getAge());
                                 System.out.println("Number of stripes: " + tigerObject.getNumberOfStripes());
                                 System.out.println("Speed: " + tigerObject.getSpeed());
-                                System.out.println("Sound level of roar: " + tigerObject.getSoundLevelOfRoar());
+                                System.out.println("Sound level of roar: " + tigerObject.getSoundLevel());
                                 break;
                             case 3:
                                 tigerObject.walking();
@@ -144,7 +144,7 @@ public class Main {
                                 System.out.println("Enter age: ");
                                 dolphinObject.setAge(keyboard.nextInt());
                                 System.out.println("Enter color of dolphin: ");
-                                dolphinObject.setColorOfDolphin(keyboard.nextLine());
+                                dolphinObject.setColor(keyboard.nextLine());
                                 System.out.println("Enter swimming speed: ");
                                 dolphinObject.setSwimmingSpeed(keyboard.nextDouble());
                                 break;
@@ -153,7 +153,7 @@ public class Main {
                                 System.out.println("Weight: " + dolphinObject.getWeight());
                                 System.out.println("Height: " + dolphinObject.getHeight());
                                 System.out.println("Age: " + dolphinObject.getAge());
-                                System.out.println("Color of dolphin: " + dolphinObject.getColorOfDolphin());
+                                System.out.println("Color of dolphin: " + dolphinObject.getColor());
                                 System.out.println("Swimming speed: " + dolphinObject.getSwimmingSpeed());
                                 break;
                             case 3:

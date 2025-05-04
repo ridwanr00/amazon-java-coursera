@@ -11,7 +11,7 @@ public class Tiger extends Animal implements Walk {
 
     private int numberOfStripes;
     private double speed;
-    private int soundLevelOfRoar;
+    private int soundLevel;
 
     public int getNumberOfStripes() {
         return numberOfStripes;
@@ -29,12 +29,12 @@ public class Tiger extends Animal implements Walk {
         this.speed = speed;
     }
 
-    public int getSoundLevelOfRoar() {
-        return soundLevelOfRoar;
+    public int getSoundLevel() {
+        return soundLevel;
     }
 
-    public void setSoundLevelOfRoar(int soundLevelOfRoar) {
-        this.soundLevelOfRoar = soundLevelOfRoar;
+    public void setSoundLevel(int soundLevel) {
+        this.soundLevel = soundLevel;
     }
 
     @Override
