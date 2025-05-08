@@ -1,12 +1,19 @@
-public class Dolphin extends Animal implements Swim{
+import java.io.Serializable;
 
+/**
+ * TODO 1.c: Implement serializable interface for class Dolphin
+ */
+public class Dolphin extends Animal implements Swim, Serializable {
+
+    // property for color of dolphin
+    String color;
+
+    // property for speed of dolphin
+    int swimmingSpeed;
 
     public Dolphin() {
-        setNameOfAnimal("Dolphin");
+        super("Dolphin");
     }
-
-    private String color;
-    private double swimmingSpeed;
 
     public String getColor() {
         return color;
@@ -16,26 +23,34 @@ public class Dolphin extends Animal implements Swim{
         this.color = color;
     }
 
-    public double getSwimmingSpeed() {
+    public int getSwimmingSpeed() {
         return swimmingSpeed;
     }
 
-    public void setSwimmingSpeed(double swimmingSpeed) {
+    public void setSwimmingSpeed(int swimmingSpeed) {
         this.swimmingSpeed = swimmingSpeed;
     }
 
     @Override
     public void eatingFood() {
-        System.out.println(getNameOfAnimal() + ": I am eating delicious fish");
+        System.out.println("Dolphin: I am eating delicious fish.");
     }
 
     @Override
     public void eatingCompleted() {
-        System.out.println(getNameOfAnimal() + ": I have eaten fish");
+        System.out.println("Dolphin: I have eaten fish.");
     }
 
     @Override
     public void swimming() {
-        System.out.println(getNameOfAnimal() + ": I am swimming at the speed " + getSwimmingSpeed());
+        System.out.println("Dolphin: I am swimming at the speed " + swimmingSpeed);
+    }
+
+    @Override
+    public String toString() {
+        return "Dolphin{" +
+                "color='" + color + '\'' +
+                ", swimmingSpeed=" + swimmingSpeed +
+                '}';
     }
 }
